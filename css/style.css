@@ -13,3 +13,28 @@
   --spfy-primary: #444444;
   --spfy-header: #080b12;
 }
+
+.d-flex {
+  display: flex;
+}
+main {
+  height: calc(100vh - 100px);
+}
+.container {
+  align-self: stretch;
+  height: 100%;
+}
+.main-container {
+  background: var(--spfy-main);
+
+  flex-basis: 80%;
+}
+.sidebare {
+  background: var(--spfy-dark);
+
+  flex-basis: 20%;
+}
+.player {
+  background: var(--spfy-footer);
+  height: 100px;
+}
