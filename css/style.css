@@ -3,3 +3,13 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --spfy-dark: #000000;
+  --spfy-white: #ffffff;
+  --spfy-main: #141922;
+  --spfy-secondary: #a3a3a3;
+  --spfy-footer: #282828;
+  --spfy-primary: #444444;
+  --spfy-header: #080b12;
+}
