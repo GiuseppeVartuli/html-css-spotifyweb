@@ -46,6 +46,14 @@ main {
 .sidebar {
   background: var(--spfy-dark);
   flex-basis: 15%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+.sidebar svg {
+  vertical-align: text-bottom;
+  margin-right: 5px;
 }
 .player {
   background: var(--spfy-footer);
