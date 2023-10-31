@@ -1,3 +1,4 @@
+/* Utily */
 * {
   padding: 0;
   margin: 0;
@@ -7,7 +8,6 @@
   font-family: "Roboto", sans-serif;
   list-style-type: none;
 }
-
 :root {
   --spfy-dark: #000000;
   --spfy-white: #ffffff;
@@ -17,9 +17,11 @@
   --spfy-primary: #444444;
   --spfy-header: #080b12;
 }
-/* Utily */
 .d-flex {
   display: flex;
+}
+.flex-column {
+  flex-direction: column;
 }
 .m-22 {
   margin: 22px;
@@ -27,6 +29,7 @@
 .white {
   color: var(--spfy-white);
 }
+
 /* Body */
 main {
   height: calc(100vh - 100px);
@@ -37,11 +40,11 @@ main {
 }
 .main-container {
   background: var(--spfy-main);
-  flex-basis: 76%;
+  flex-basis: 85%;
 }
 .sidebar {
   background: var(--spfy-dark);
-  flex-basis: 24%;
+  flex-basis: 15%;
 }
 .player {
   background: var(--spfy-footer);
@@ -49,6 +52,7 @@ main {
 }
 /* end Body */
 
+/* UPGRADE */
 .upgrade {
   height: 94px;
   width: 100%;
@@ -65,10 +69,68 @@ main {
   width: 300px;
   justify-content: center;
 }
+/* end UPGRADE */
 
+/* LOGO */
 .logo {
   width: 140px;
+}
+/* end LOGO */
+
+/* Siderbar */
+li {
+  line-height: 35px;
 }
 .menu {
   color: var(--spfy-primary);
 }
+.playlist {
+  color: var(--spfy-primary);
+}
+.plus {
+  width: 30px;
+  height: 30px;
+  background: gray;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  padding: 5px;
+  background: var(--spfy-secondary);
+}
+.menu-bottom {
+  padding-top: 190px;
+}
+.app {
+  border-bottom: 1px solid var(--spfy-secondary);
+  padding: 15px 0;
+}
+.account {
+  padding: 15px 0;
+}
+.arrow-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid var(--spfy-white);
+  color: var(--spfy-white);
+  text-align: center;
+  font-size: 10px;
+}
+.installation {
+  color: var(--spfy-primary);
+  padding: 0 10px;
+}
+.user-circle {
+  width: 23px;
+  height: 23px;
+  background: var(--spfy-secondary);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  color: var(--spfy-white);
+}
+.name-account {
+  color: var(--spfy-white);
+  padding: 0 10px;
+}
+/* end Siderbar */
