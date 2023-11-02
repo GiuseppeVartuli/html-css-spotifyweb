@@ -5,7 +5,6 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-family: "Roboto", sans-serif;
   list-style-type: none;
 }
 :root {
@@ -59,7 +58,7 @@ main {
 }
 .player {
   background: var(--spfy-footer);
-  height: 100px;
+  height: 90px;
 }
 /* end Body */
 
@@ -70,6 +69,9 @@ main {
 /* end LOGO */
 
 /* Siderbar */
+.bar-container {
+  margin: 0 22px;
+}
 svg {
   width: 10%;
   padding-right: 0 20px;
@@ -162,7 +164,43 @@ li {
   color: var(--spfy-primary);
   margin: 10px;
 }
-
+/* Recently */
+h2 {
+  color: var(--spfy-white);
+  padding: 20px;
+}
+h4 {
+  color: var(--spfy-white);
+  text-align: center;
+}
+.recently h5 {
+  color: var(--spfy-primary);
+  text-align: center;
+}
+.for-you h5 {
+  color: var(--spfy-primary);
+  padding: 0 20px;
+}
+.artists h5 {
+  color: var(--spfy-primary);
+  padding: 0 20px;
+}
+.col-2 {
+  width: calc(100% / 12 * 2);
+}
+.recently {
+  padding: 20px;
+}
+.recently img,
+.for-you img {
+  width: 100%;
+  padding: 20px;
+}
+.artists img {
+  width: 100%;
+  padding: 20px;
+  border-radius: 50%;
+}
 /* end Main-Container */
 
 /* responsive */
