@@ -16,6 +16,9 @@
   --spfy-primary: #444444;
   --spfy-header: #080b12;
 }
+img {
+  width: 100%;
+}
 .d-flex {
   display: flex;
 }
@@ -203,6 +206,28 @@ h4 {
 }
 /* end Main-Container */
 
+/* Player */
+
+.player {
+  display: flex;
+  justify-content: space-between;
+}
+.player-left {
+  margin: 20px;
+  gap: 20px;
+}
+.player-left h5 {
+  color: var(--spfy-white);
+}
+.player-left h6 {
+  color: var(--spfy-primary);
+}
+.player-left a {
+  color: var(--spfy-primary);
+}
+.favourites {
+  gap: 10px;
+}
 /* responsive */
 @media screen and (max-width: 350px) {
   .player {
