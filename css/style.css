@@ -228,6 +228,24 @@ h4 {
 .favourites {
   gap: 10px;
 }
+.player-top i {
+  color: var(--spfy-white);
+  font-size: 25px;
+  padding: 15px;
+}
+.player-bottom {
+  gap: 10px;
+}
+
+.time {
+  width: 500px;
+  height: 5px;
+  background: var(--spfy-secondary);
+  border-radius: 5px;
+}
+.player-right i {
+  color: var(--spfy-white);
+}
 /* responsive */
 @media screen and (max-width: 350px) {
   .player {
