@@ -29,7 +29,9 @@
 .white {
   color: var(--spfy-white);
 }
-
+.justify-center {
+  justify-content: center;
+}
 /* Body */
 main {
   height: calc(100vh - 100px);
@@ -60,25 +62,6 @@ main {
   height: 100px;
 }
 /* end Body */
-
-/* UPGRADE */
-.upgrade {
-  height: 94px;
-  width: 100%;
-  background: var(--spfy-header);
-  justify-content: end;
-  align-items: center;
-}
-.btn-upgrade {
-  display: flex;
-  color: var(--spfy-white);
-  border: 1px solid var(--spfy-white);
-  border-radius: 25px;
-  padding: 15px;
-  width: 300px;
-  justify-content: center;
-}
-/* end UPGRADE */
 
 /* LOGO */
 .logo {
@@ -149,6 +132,38 @@ li {
   padding: 0 8px;
 }
 /* end Siderbar */
+
+/* Main-Container */
+
+/* UPGRADE */
+.upgrade {
+  height: 94px;
+  width: 100%;
+  background: var(--spfy-header);
+  justify-content: end;
+  align-items: center;
+}
+.btn-upgrade {
+  display: flex;
+  color: var(--spfy-white);
+  border: 1px solid var(--spfy-white);
+  border-radius: 25px;
+  padding: 15px;
+  width: 300px;
+  justify-content: center;
+}
+
+/* Bar-Main */
+.bar-main {
+  text-align: center;
+  padding: 15px;
+}
+.bar-main a {
+  color: var(--spfy-primary);
+  margin: 10px;
+}
+
+/* end Main-Container */
 
 /* responsive */
 @media screen and (max-width: 350px) {
