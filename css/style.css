@@ -246,6 +246,7 @@ h4 {
   background: var(--spfy-primary);
   border-radius: 5px;
   border-left: 100px solid var(--spfy-secondary);
+  margin: 7px;
 }
 .player-right i {
   color: var(--spfy-white);
@@ -260,6 +261,7 @@ h4 {
   background: var(--spfy-primary);
   border-radius: 5px;
   border-left: 30px solid var(--spfy-secondary);
+  margin: 5px;
 }
 
 /* Hover */
