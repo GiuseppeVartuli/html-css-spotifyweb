@@ -195,7 +195,7 @@ h4 {
 }
 .recently img,
 .for-you img {
-  width: 100%;
+  max-width: 100%;
   padding: 20px;
 }
 .artists img {
@@ -245,6 +245,7 @@ h4 {
   height: 5px;
   background: var(--spfy-primary);
   border-radius: 5px;
+  border-left: 100px solid var(--spfy-secondary);
 }
 .player-right i {
   color: var(--spfy-white);
@@ -258,10 +259,14 @@ h4 {
   height: 5px;
   background: var(--spfy-primary);
   border-radius: 5px;
+  border-left: 30px solid var(--spfy-secondary);
 }
 
 /* Hover */
 
+.main-container img:hover {
+  filter: opacity(0.5);
+}
 li:hover {
   color: var(--spfy-white);
 }
@@ -276,6 +281,12 @@ a:hover {
 }
 button:hover {
   transform: scale(1.1);
+}
+.time:hover {
+  border-left: 100px solid greenyellow;
+}
+.volume:hover {
+  border-left: 30px solid greenyellow;
 }
 /* scroll bar */
 
