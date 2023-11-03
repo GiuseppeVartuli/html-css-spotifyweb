@@ -146,14 +146,13 @@ li {
   align-items: center;
 }
 .btn-upgrade {
-  display: flex;
-  color: var(--spfy-white);
   border: 1px solid var(--spfy-white);
+  background: var(--spfy-header);
+  color: var(--spfy-white);
   border-radius: 25px;
-  padding: 15px;
+  margin: 15px;
   width: 228px;
   height: 43px;
-  align-items: center;
 }
 
 /* Bar-Main */
@@ -271,6 +270,12 @@ a:hover {
 }
 .plus:hover {
   background: var(--spfy-white);
+}
+.player-top i:hover {
+  font-size: 20px;
+}
+button:hover {
+  transform: scale(1.1);
 }
 /* scroll bar */
 
