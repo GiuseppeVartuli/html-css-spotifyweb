@@ -14,7 +14,7 @@
   --spfy-secondary: #c1c1c1;
   --spfy-footer: #282828;
   --spfy-primary: #7d7d7d;
-  --spfy-header: #080b12;
+  --spfy-header: #080b127a;
 }
 
 .d-flex {
@@ -43,7 +43,7 @@ main {
 .main-container {
   background: var(--spfy-main);
   flex-basis: 85%;
-  overflow-y: auto;
+  overflow: auto;
 }
 .sidebar {
   background: var(--spfy-dark);
@@ -140,17 +140,19 @@ li {
 /* UPGRADE */
 .upgrade {
   height: 94px;
-  width: 100%;
+  width: calc(100% - 288px);
   background: var(--spfy-header);
   justify-content: end;
   align-items: center;
+  position: fixed;
+  z-index: 2;
 }
 .btn-upgrade {
   border: 1px solid var(--spfy-white);
   background: var(--spfy-header);
   color: var(--spfy-white);
   border-radius: 25px;
-  margin: 15px;
+  margin: 30px;
   width: 228px;
   height: 43px;
 }
@@ -159,6 +161,7 @@ li {
 .bar-main {
   text-align: center;
   padding: 15px;
+  margin-top: 94px;
 }
 .bar-main a {
   color: var(--spfy-primary);
@@ -247,6 +250,17 @@ h4 {
   border-radius: 5px;
   border-left: 100px solid var(--spfy-secondary);
   margin: 7px;
+  position: relative;
+}
+.bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--spfy-white);
+  position: absolute;
+  left: 0;
+  top: -2px;
+  display: none;
 }
 .player-right i {
   color: var(--spfy-white);
@@ -262,6 +276,7 @@ h4 {
   border-radius: 5px;
   border-left: 30px solid var(--spfy-secondary);
   margin: 5px;
+  position: relative;
 }
 
 /* Hover */
@@ -286,9 +301,15 @@ button:hover {
 }
 .time:hover {
   border-left: 100px solid greenyellow;
+  .bullet {
+    display: block;
+  }
 }
 .volume:hover {
   border-left: 30px solid greenyellow;
+  .bullet {
+    display: block;
+  }
 }
 /* scroll bar */
 
