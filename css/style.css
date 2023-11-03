@@ -252,7 +252,7 @@ h4 {
   margin: 7px;
   position: relative;
 }
-.bullet {
+.dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -301,13 +301,13 @@ button:hover {
 }
 .time:hover {
   border-left: 100px solid greenyellow;
-  .bullet {
+  .dot {
     display: block;
   }
 }
 .volume:hover {
   border-left: 30px solid greenyellow;
-  .bullet {
+  .dot {
     display: block;
   }
 }
