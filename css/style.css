@@ -269,7 +269,9 @@ li:hover {
 a:hover {
   color: var(--spfy-white);
 }
-
+.plus:hover {
+  background: var(--spfy-white);
+}
 /* scroll bar */
 
 /* responsive */
