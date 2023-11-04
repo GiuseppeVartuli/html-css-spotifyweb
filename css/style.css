@@ -17,7 +17,9 @@
   --spfy-primary: #7d7d7d;
   --spfy-header: #080b127a;
 }
-
+img {
+  position: relative;
+}
 .d-flex {
   display: flex;
 }
@@ -136,24 +138,14 @@ li {
   padding: 0 8px;
 }
 .siderbar-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
 }
 .menu-mobile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   display: none;
 }
 .app-mobile {
-  padding: 15px 0;
   display: none;
 }
 .mobile-top {
-  display: flex;
-  flex-direction: column;
   display: none;
 }
 /* end Siderbar */
@@ -232,6 +224,11 @@ h4 {
   width: 100%;
   border-radius: 50%;
 }
+/* .play-button {
+  font-size: 50px;
+  color: var(--spfy-white);
+  position: absolute;
+} */
 /* end Main-Container */
 
 /* Player */
@@ -358,6 +355,40 @@ button:hover {
 @media screen and (max-width: 350px) {
   .player {
     width: 100%;
+  }
+  .logo {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-bottom {
+    display: none;
+  }
+  .bar-container {
+    width: 100%;
+    margin: 0;
+  }
+  .siderbar-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .menu-mobile {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .app-mobile {
+    display: block;
+    padding: 15px 0;
+  }
+  .mobile-top {
+    display: block;
+    display: flex;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 480px) {
