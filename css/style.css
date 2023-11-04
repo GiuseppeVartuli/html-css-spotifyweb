@@ -6,6 +6,7 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   list-style-type: none;
+  overflow: hidden;
 }
 :root {
   --spfy-dark: #000000;
@@ -170,23 +171,25 @@ li {
 /* Recently */
 h2 {
   color: var(--spfy-white);
-  padding: 20px;
+  margin: 20px 0;
 }
 h4 {
   color: var(--spfy-white);
   text-align: center;
+  padding: 10px;
 }
 .recently h5 {
   color: var(--spfy-primary);
   text-align: center;
+  margin-bottom: 30px;
 }
 .for-you h5 {
   color: var(--spfy-primary);
-  padding: 0 20px;
+  margin-bottom: 30px;
 }
 .artists h5 {
   color: var(--spfy-primary);
-  padding: 0 20px;
+  margin-bottom: 30px;
 }
 .col-2 {
   width: calc(100% / 12 * 2);
@@ -197,7 +200,7 @@ h4 {
 .recently,
 .for-you,
 .artists {
-  padding: 20px;
+  margin-left: 20px;
 }
 .recently img,
 .for-you img {
@@ -214,6 +217,9 @@ h4 {
 .player {
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
 }
 .player-left {
   margin: 30px 10px;
@@ -312,7 +318,19 @@ button:hover {
     display: block;
   }
 }
-/* scroll bar */
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--spfy-primary);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--spfy-secondary);
+  border-radius: 10px;
+}
 
 /* responsive */
 @media screen and (max-width: 350px) {
