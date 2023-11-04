@@ -191,6 +191,9 @@ h4 {
 .col-2 {
   width: calc(100% / 12 * 2);
 }
+.album div {
+  margin-right: 15px;
+}
 .recently,
 .for-you,
 .artists {
@@ -199,11 +202,9 @@ h4 {
 .recently img,
 .for-you img {
   max-width: 100%;
-  padding: 20px;
 }
 .artists img {
   width: 100%;
-  padding: 20px;
   border-radius: 50%;
 }
 /* end Main-Container */
