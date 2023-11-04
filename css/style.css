@@ -135,6 +135,27 @@ li {
   color: var(--spfy-white);
   padding: 0 8px;
 }
+.siderbar-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+.app-mobile {
+  padding: 15px 0;
+  display: none;
+}
+.mobile-top {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
 /* end Siderbar */
 
 /* Main-Container */
