@@ -60,7 +60,7 @@ main {
 }
 .player {
   background: var(--spfy-footer);
-  height: 90px;
+  height: 100px;
 }
 /* end Body */
 
@@ -88,6 +88,7 @@ li {
 }
 .playlist {
   color: var(--spfy-primary);
+  margin-top: 10px;
 }
 .plus {
   width: 30px;
