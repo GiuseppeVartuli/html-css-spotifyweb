@@ -17,9 +17,7 @@
   --spfy-primary: #7d7d7d;
   --spfy-header: #080b127a;
 }
-img {
-  position: relative;
-}
+
 .d-flex {
   display: flex;
 }
@@ -79,11 +77,11 @@ main {
   justify-content: space-between;
 }
 svg {
-  width: 10%;
+  width: 25px;
   padding-right: 0 20px;
 }
 li {
-  line-height: 35px;
+  line-height: 30px;
 }
 .menu {
   color: var(--spfy-primary);
@@ -106,10 +104,10 @@ li {
 
 .app {
   border-bottom: 1px solid var(--spfy-primary);
-  padding: 15px 0;
+  padding: 8px 0;
 }
 .account {
-  padding: 15px 0;
+  padding: 5px 0;
 }
 .arrow-circle {
   width: 15px;
@@ -137,8 +135,7 @@ li {
   color: var(--spfy-white);
   padding: 0 8px;
 }
-.siderbar-mobile {
-}
+
 .menu-mobile {
   display: none;
 }
@@ -206,7 +203,7 @@ h4 {
   margin-bottom: 30px;
 }
 .col-2 {
-  width: calc(100% / 12 * 2);
+  width: calc(100% / 12 * 2 - 15px);
 }
 .album div {
   margin-right: 15px;
@@ -218,10 +215,10 @@ h4 {
 }
 .recently img,
 .for-you img {
-  max-width: 100%;
+  max-width: 250px;
 }
 .artists img {
-  width: 100%;
+  max-width: 250px;
   border-radius: 50%;
 }
 /* .play-button {
@@ -352,48 +349,45 @@ button:hover {
 }
 
 /* responsive */
-@media screen and (max-width: 350px) {
-  .player {
-    width: 100%;
+
+@media screen and (min-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+  .upgrade {
+    width: 85%;
   }
   .logo {
-    display: none;
+    width: 80%;
+    margin-left: 5px;
   }
-  .menu {
-    display: none;
+  li {
+    font-size: 10px;
+    line-height: 15px;
   }
-  .menu-bottom {
-    display: none;
+  .plus {
+    width: 20px;
+    height: 20px;
+    background: gray;
+    text-align: center;
+    font-size: 10px;
+    color: black;
+    padding: 5px;
+    background: var(--spfy-secondary);
+    margin: 0 3px 0 0;
   }
   .bar-container {
-    width: 100%;
-    margin: 0;
+    margin: 0 10px;
   }
-  .siderbar-mobile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
+  .app {
+    font-size: 10px;
   }
-  .menu-mobile {
-    display: block;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .app-mobile {
-    display: block;
-    padding: 15px 0;
-  }
-  .mobile-top {
-    display: block;
-    display: flex;
-    flex-direction: column;
+  .account {
+    font-size: 10px;
   }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (min-width: 768px) {
 }
-@media screen and (max-width: 768px) {
-}
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
 }
