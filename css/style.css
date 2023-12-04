@@ -66,7 +66,7 @@ main {
 
 /* LOGO */
 .logo {
-  width: 140px;
+  width: 150px;
 }
 /* end LOGO */
 
@@ -83,6 +83,7 @@ svg {
 li {
   line-height: 30px;
 }
+
 .menu {
   color: var(--spfy-primary);
 }
@@ -99,7 +100,7 @@ li {
   color: black;
   padding: 5px;
   background: var(--spfy-secondary);
-  margin: 0 10px 0 0;
+  margin: 0 10px -10px 0;
 }
 
 .app {
@@ -350,7 +351,7 @@ button:hover {
 
 /* responsive */
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     font-size: 13px;
   }
