@@ -171,6 +171,13 @@ li {
 }
 
 /* Bar-Main */
+
+.line_green {
+  border-bottom: 3px solid greenyellow;
+  width: 40px;
+  margin-left: 477px;
+}
+
 .bar-main {
   text-align: center;
   padding: 15px;
