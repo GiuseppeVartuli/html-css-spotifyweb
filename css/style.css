@@ -6,7 +6,6 @@
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
   list-style-type: none;
-  overflow: hidden;
 }
 :root {
   --spfy-dark: #000000;
@@ -71,6 +70,16 @@ main {
 /* end LOGO */
 
 /* Siderbar */
+.green_container {
+  position: absolute;
+}
+.verticaline_green {
+  position: relative;
+  left: -22px;
+  border-left: 3px solid greenyellow;
+  height: 30px;
+}
+
 .bar-container {
   margin: 0 22px;
   height: 100%;
