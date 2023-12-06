@@ -374,7 +374,7 @@ button:hover {
 
 /* responsive */
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
   body {
     font-size: 13px;
   }
@@ -466,7 +466,7 @@ button:hover {
   .recently img,
   .for-you img,
   .artists img {
-    max-width: 170px;
+    width: 170px;
   }
   .logo-xs {
     display: block;
@@ -506,6 +506,88 @@ button:hover {
 }
 
 @media screen and (min-width: 768px) {
+  .sidebar {
+    flex-basis: 25%;
+  }
+  .logo-xs {
+    display: none;
+  }
+  .logo {
+    display: block;
+  }
+  li {
+    display: block;
+    line-height: 25px;
+  }
+  .menu-xs {
+    display: none;
+  }
+  .mobile-xs {
+    display: none;
+  }
+  .account {
+    display: block;
+  }
+  .app {
+    display: block;
+  }
+
+  .upgrade {
+    width: 75%;
+  }
+  .album {
+    flex-wrap: wrap;
+  }
+  .recently img,
+  .for-you img,
+  .artists img {
+    max-width: 270px;
+  }
+  .col-sm-6 {
+    width: calc(100% / 12 * 6 - 15px);
+  }
+  .line_green {
+    border-bottom: 3px solid greenyellow;
+    width: 31px;
+    margin-left: 61px;
+    margin-top: -18px;
+  }
+  .time {
+    width: 250px;
+    height: 5px;
+    background: var(--spfy-primary);
+    border-radius: 5px;
+    border-left: 105px solid var(--spfy-secondary);
+    margin: 7px;
+    position: relative;
+  }
+  .player-bottom {
+    margin-left: 20px;
+  }
+  .player-left {
+    margin: 36px 10px;
+    gap: 13px;
+  }
+  .player-left a {
+    font-size: 10px;
+  }
+  .favourites {
+    gap: 10px;
+    flex-direction: column;
+  }
+  .player-right {
+    margin: 36px 1px;
+    gap: 8px;
+  }
+  .volume {
+    width: 60px;
+    height: 5px;
+    background: var(--spfy-primary);
+    border-radius: 5px;
+    border-left: 30px solid var(--spfy-secondary);
+    margin: 3px;
+    position: relative;
+  }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 1440px) {
 }
