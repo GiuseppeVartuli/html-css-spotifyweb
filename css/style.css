@@ -161,6 +161,9 @@ li {
 .mobile-top {
   display: none;
 }
+.mobile-xs {
+  display: none;
+}
 /* end Siderbar */
 
 /* Main-Container */
