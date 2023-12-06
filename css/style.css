@@ -374,7 +374,7 @@ button:hover {
 
 /* responsive */
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   body {
     font-size: 13px;
   }
@@ -505,7 +505,7 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .sidebar {
     flex-basis: 25%;
   }
