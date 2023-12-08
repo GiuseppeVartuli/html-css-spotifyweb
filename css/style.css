@@ -466,7 +466,7 @@ button:hover {
   .recently img,
   .for-you img,
   .artists img {
-    width: 170px;
+    max-width: 150px;
   }
   .logo-xs {
     display: block;
@@ -541,7 +541,7 @@ button:hover {
   .recently img,
   .for-you img,
   .artists img {
-    max-width: 270px;
+    max-width: 250px;
   }
   .col-sm-6 {
     width: calc(100% / 12 * 6 - 15px);
