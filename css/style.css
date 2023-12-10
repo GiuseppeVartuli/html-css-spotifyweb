@@ -505,7 +505,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .sidebar {
     flex-basis: 25%;
   }
@@ -589,5 +589,25 @@ button:hover {
     position: relative;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 980px) {
+  .sidebar {
+    flex-basis: 15%;
+  }
+  .upgrade {
+    width: 80%;
+  }
+  .line_green {
+    margin-left: 93px;
+  }
+  .col-md-3 {
+    width: calc(100% / 12 * 3 - 15px);
+  }
+  .recently img,
+  .for-you img,
+  .artists img {
+    max-width: 180px;
+  }
+  .album {
+    flex-wrap: wrap;
+  }
 }
